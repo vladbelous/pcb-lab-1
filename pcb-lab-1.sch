@@ -49,12 +49,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5ECDCC4C
-P 10000 5750
-F 0 "J?" H 10080 5792 50  0000 L CNN
-F 1 "UPDI" H 10080 5701 50  0000 L CNN
-F 2 "" H 10000 5750 50  0001 C CNN
-F 3 "~" H 10000 5750 50  0001 C CNN
-	1    10000 5750
+P 9850 5000
+F 0 "J?" H 9930 5042 50  0000 L CNN
+F 1 "UPDI" H 9930 4951 50  0000 L CNN
+F 2 "" H 9850 5000 50  0001 C CNN
+F 3 "~" H 9850 5000 50  0001 C CNN
+	1    9850 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -112,21 +112,21 @@ F 3 "" H 7500 1750 50  0001 C CNN
 	1    7750 1750
 	1    0    0    -1  
 $EndComp
-Text Notes 9200 6400 0    50   ~ 0
+Text Notes 9150 5650 0    50   ~ 0
 UPDI level shifting:\nUse jumpers to select between\n  TXB and PI4ULS5V201
 $Comp
 L local_symbols:PI4ULS5V201-SOT23-6 U?
 U 1 1 5ECEBDB6
-P 8250 5250
-F 0 "U?" H 8250 5975 50  0000 C CNN
-F 1 "PI4ULS5V201-SOT23-6" H 8250 5884 50  0000 C CNN
-F 2 "" H 8250 5250 50  0001 C CNN
-F 3 "" H 8250 5250 50  0001 C CNN
-	1    8250 5250
+P 8100 4500
+F 0 "U?" H 8100 5225 50  0000 C CNN
+F 1 "PI4ULS5V201-SOT23-6" H 8100 5134 50  0000 C CNN
+F 2 "" H 8100 4500 50  0001 C CNN
+F 3 "" H 8100 4500 50  0001 C CNN
+	1    8100 4500
 	1    0    0    -1  
 $EndComp
 Text Notes 9250 3100 0    50   ~ 0
-UART level shifting:\nUse jumpers to select between\n  TXB, 74LVC1T45 and Si8422
+UART level shifting:\nUse jumpers to select between\n  TXB0104 and 74LVC1T45
 Text Notes 800  4200 0    50   ~ 0
 I2C level shifting:\nUse jumpers to select between\n  NLSX4373 and MOSFET-based solution
 Text Notes 8300 6750 0    50   ~ 0
@@ -717,24 +717,13 @@ SDA
 $Comp
 L power:GND #PWR?
 U 1 1 5ED92953
-P 8350 5550
-F 0 "#PWR?" H 8350 5300 50  0001 C CNN
-F 1 "GND" H 8355 5377 50  0000 C CNN
-F 2 "" H 8350 5550 50  0001 C CNN
-F 3 "" H 8350 5550 50  0001 C CNN
-	1    8350 5550
+P 8200 4800
+F 0 "#PWR?" H 8200 4550 50  0001 C CNN
+F 1 "GND" H 8205 4627 50  0000 C CNN
+F 2 "" H 8200 4800 50  0001 C CNN
+F 3 "" H 8200 4800 50  0001 C CNN
+	1    8200 4800
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5ED99FD2
-P 5550 1100
-F 0 "J?" H 5550 1300 50  0000 C CNN
-F 1 "shifter side" H 5400 900 50  0000 C CNN
-F 2 "" H 5550 1100 50  0001 C CNN
-F 3 "~" H 5550 1100 50  0001 C CNN
-	1    5550 1100
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J?
@@ -753,19 +742,6 @@ Text GLabel 5750 1000 2    50   Input ~ 0
 RX_2V5_A
 Text GLabel 5750 1100 2    50   Input ~ 0
 RX_2V5_B
-Text GLabel 5750 1200 2    50   Input ~ 0
-RX_2V5_C
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5ED9CF81
-P 5550 1700
-F 0 "J?" H 5550 1900 50  0000 C CNN
-F 1 "shifter side" H 5400 1500 50  0000 C CNN
-F 2 "" H 5550 1700 50  0001 C CNN
-F 3 "~" H 5550 1700 50  0001 C CNN
-	1    5550 1700
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5ED9CF8B
@@ -783,8 +759,6 @@ Text GLabel 5750 1600 2    50   Input ~ 0
 TX_2V5_A
 Text GLabel 5750 1700 2    50   Input ~ 0
 TX_2V5_B
-Text GLabel 5750 1800 2    50   Input ~ 0
-TX_2V5_C
 Text GLabel 7250 1200 0    50   Input ~ 0
 RX_2V5_A
 Text GLabel 7250 1300 0    50   Input ~ 0
@@ -963,17 +937,6 @@ Wire Wire Line
 Text GLabel 8100 3000 2    50   Input ~ 0
 5V
 $Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5EE00877
-P 9650 1100
-F 0 "J?" H 9650 1300 50  0000 C CNN
-F 1 "shifter side" H 9500 900 50  0000 C CNN
-F 2 "" H 9650 1100 50  0001 C CNN
-F 3 "~" H 9650 1100 50  0001 C CNN
-	1    9650 1100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5EE00881
 P 9850 1100
@@ -990,19 +953,6 @@ Text GLabel 9450 1000 0    50   Input ~ 0
 RX_A
 Text GLabel 9450 1100 0    50   Input ~ 0
 RX_B
-Text GLabel 9450 1200 0    50   Input ~ 0
-RX_C
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5EE0088F
-P 9650 1700
-F 0 "J?" H 9650 1900 50  0000 C CNN
-F 1 "shifter side" H 9500 1500 50  0000 C CNN
-F 2 "" H 9650 1700 50  0001 C CNN
-F 3 "~" H 9650 1700 50  0001 C CNN
-	1    9650 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5EE00899
@@ -1020,8 +970,6 @@ Text GLabel 9450 1600 0    50   Input ~ 0
 TX_A
 Text GLabel 9450 1700 0    50   Input ~ 0
 TX_B
-Text GLabel 9450 1800 0    50   Input ~ 0
-TX_C
 Text GLabel 9650 2300 0    50   Input ~ 0
 5V
 $Comp
@@ -1055,153 +1003,197 @@ Text GLabel 8250 1700 2    50   Input ~ 0
 Wire Wire Line
 	8150 1700 8250 1700
 Text Notes 5200 800  0    50   ~ 0
-Three-way jumpers
+Two-way jumpers
 $Comp
 L Jumper:Jumper_3_Open JP?
 U 1 1 5EE0F5C0
-P 6500 5000
-F 0 "JP?" V 6454 5086 50  0000 L CNN
-F 1 "UPDI" V 6545 5086 50  0000 L CNN
-F 2 "" H 6500 5000 50  0001 C CNN
-F 3 "~" H 6500 5000 50  0001 C CNN
-	1    6500 5000
+P 6500 4300
+F 0 "JP?" V 6454 4386 50  0000 L CNN
+F 1 "UPDI" V 6545 4386 50  0000 L CNN
+F 2 "" H 6500 4300 50  0001 C CNN
+F 3 "~" H 6500 4300 50  0001 C CNN
+	1    6500 4300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6500 4750 6500 4700
+	6500 4050 6500 4000
 Wire Wire Line
-	6500 4700 6550 4700
+	6500 4000 6550 4000
 Wire Wire Line
-	6500 5250 6500 5300
+	6500 4550 6500 4600
 Wire Wire Line
-	6500 5300 6550 5300
-Text GLabel 6550 4700 2    50   Input ~ 0
+	6500 4600 6550 4600
+Text GLabel 6550 4000 2    50   Input ~ 0
 UPDI_2V5_A
-Text GLabel 6550 5300 2    50   Input ~ 0
+Text GLabel 6550 4600 2    50   Input ~ 0
 UPDI_2V5_B
-Text GLabel 6350 5000 0    50   Input ~ 0
+Text GLabel 6350 4300 0    50   Input ~ 0
 UPDI_2V5
 Text GLabel 7250 1500 0    50   Input ~ 0
 UPDI_2V5_A
 Text GLabel 8150 1500 2    50   Input ~ 0
 UPDI_A
-Text GLabel 7850 4750 0    50   Input ~ 0
+Text GLabel 7700 4000 0    50   Input ~ 0
 2V5
-Text GLabel 7850 4950 0    50   Input ~ 0
+Text GLabel 7700 4200 0    50   Input ~ 0
 UPDI_2V5_B
-Text GLabel 8650 5050 2    50   Input ~ 0
+Text GLabel 8500 4300 2    50   Input ~ 0
 UPDI_B
-Text GLabel 7850 5150 0    50   Input ~ 0
+Text GLabel 7700 4400 0    50   Input ~ 0
 2V5
 $Comp
 L Device:C_Small C?
 U 1 1 5EE1AED9
-P 7900 5700
-F 0 "C?" H 7700 5700 50  0000 L CNN
-F 1 "100nF" H 7600 5600 50  0000 L CNN
-F 2 "" H 7900 5700 50  0001 C CNN
-F 3 "~" H 7900 5700 50  0001 C CNN
-	1    7900 5700
+P 7750 4950
+F 0 "C?" H 7550 4950 50  0000 L CNN
+F 1 "100nF" H 7450 4850 50  0000 L CNN
+F 2 "" H 7750 4950 50  0001 C CNN
+F 3 "~" H 7750 4950 50  0001 C CNN
+	1    7750 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 5550 7850 5550
-Text GLabel 7850 5550 0    50   Input ~ 0
+	7750 4800 7700 4800
+Text GLabel 7700 4800 0    50   Input ~ 0
 2V5
 Wire Wire Line
-	7900 5550 7900 5600
+	7750 4800 7750 4850
 $Comp
 L power:GND #PWR?
 U 1 1 5EE1AEE6
-P 7900 5800
-F 0 "#PWR?" H 7900 5550 50  0001 C CNN
-F 1 "GND" H 7905 5627 50  0000 C CNN
-F 2 "" H 7900 5800 50  0001 C CNN
-F 3 "" H 7900 5800 50  0001 C CNN
-	1    7900 5800
+P 7750 5050
+F 0 "#PWR?" H 7750 4800 50  0001 C CNN
+F 1 "GND" H 7755 4877 50  0000 C CNN
+F 2 "" H 7750 5050 50  0001 C CNN
+F 3 "" H 7750 5050 50  0001 C CNN
+	1    7750 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5EE232B0
-P 8600 5700
-F 0 "C?" H 8400 5700 50  0000 L CNN
-F 1 "100nF" H 8300 5600 50  0000 L CNN
-F 2 "" H 8600 5700 50  0001 C CNN
-F 3 "~" H 8600 5700 50  0001 C CNN
-	1    8600 5700
+P 8450 4950
+F 0 "C?" H 8250 4950 50  0000 L CNN
+F 1 "100nF" H 8150 4850 50  0000 L CNN
+F 2 "" H 8450 4950 50  0001 C CNN
+F 3 "~" H 8450 4950 50  0001 C CNN
+	1    8450 4950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 5550 8650 5550
+	8450 4800 8500 4800
 Wire Wire Line
-	8600 5550 8600 5600
+	8450 4800 8450 4850
 $Comp
 L power:GND #PWR?
 U 1 1 5EE232BD
-P 8600 5800
-F 0 "#PWR?" H 8600 5550 50  0001 C CNN
-F 1 "GND" H 8605 5627 50  0000 C CNN
-F 2 "" H 8600 5800 50  0001 C CNN
-F 3 "" H 8600 5800 50  0001 C CNN
-	1    8600 5800
+P 8450 5050
+F 0 "#PWR?" H 8450 4800 50  0001 C CNN
+F 1 "GND" H 8455 4877 50  0000 C CNN
+F 2 "" H 8450 5050 50  0001 C CNN
+F 3 "" H 8450 5050 50  0001 C CNN
+	1    8450 5050
 	-1   0    0    -1  
 $EndComp
-Text GLabel 8650 5550 2    50   Input ~ 0
+Text GLabel 8500 4800 2    50   Input ~ 0
 5V
-Text GLabel 8650 4850 2    50   Input ~ 0
+Text GLabel 8500 4100 2    50   Input ~ 0
 5V
 $Comp
 L Jumper:Jumper_3_Open JP?
 U 1 1 5EE28B24
-P 9600 5000
-F 0 "JP?" V 9554 5086 50  0000 L CNN
-F 1 "UPDI" V 9645 5086 50  0000 L CNN
-F 2 "" H 9600 5000 50  0001 C CNN
-F 3 "~" H 9600 5000 50  0001 C CNN
-	1    9600 5000
+P 9450 4250
+F 0 "JP?" V 9404 4336 50  0000 L CNN
+F 1 "UPDI" V 9495 4336 50  0000 L CNN
+F 2 "" H 9450 4250 50  0001 C CNN
+F 3 "~" H 9450 4250 50  0001 C CNN
+	1    9450 4250
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	9600 4750 9600 4700
+	9450 4000 9450 3950
 Wire Wire Line
-	9600 4700 9550 4700
+	9450 3950 9400 3950
 Wire Wire Line
-	9600 5250 9600 5300
+	9450 4500 9450 4550
 Wire Wire Line
-	9600 5300 9550 5300
-Text GLabel 9550 4700 0    50   Input ~ 0
+	9450 4550 9400 4550
+Text GLabel 9400 3950 0    50   Input ~ 0
 UPDI_A
-Text GLabel 9550 5300 0    50   Input ~ 0
+Text GLabel 9400 4550 0    50   Input ~ 0
 UPDI_B
-Text GLabel 9750 5000 2    50   Input ~ 0
+Text GLabel 9600 4250 2    50   Input ~ 0
 UPDI
-Text GLabel 9500 5850 0    50   Input ~ 0
+Text GLabel 9350 5100 0    50   Input ~ 0
 UPDI
 $Comp
 L Device:R_Small R?
 U 1 1 5EE2E29D
-P 9700 5850
-F 0 "R?" V 9600 5850 50  0000 C CNN
-F 1 "3.3k" V 9500 5850 50  0000 C CNN
-F 2 "" H 9700 5850 50  0001 C CNN
-F 3 "~" H 9700 5850 50  0001 C CNN
-	1    9700 5850
+P 9550 5100
+F 0 "R?" V 9450 5100 50  0000 C CNN
+F 1 "3.3k" V 9350 5100 50  0000 C CNN
+F 2 "" H 9550 5100 50  0001 C CNN
+F 3 "~" H 9550 5100 50  0001 C CNN
+	1    9550 5100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9500 5850 9600 5850
-Text GLabel 9800 5650 0    50   Input ~ 0
+	9350 5100 9450 5100
+Text GLabel 9650 4900 0    50   Input ~ 0
 5V
 $Comp
 L power:GND #PWR?
 U 1 1 5EE32CBA
-P 9800 5750
-F 0 "#PWR?" H 9800 5500 50  0001 C CNN
-F 1 "GND" V 9805 5622 50  0000 R CNN
-F 2 "" H 9800 5750 50  0001 C CNN
-F 3 "" H 9800 5750 50  0001 C CNN
-	1    9800 5750
+P 9650 5000
+F 0 "#PWR?" H 9650 4750 50  0001 C CNN
+F 1 "GND" V 9655 4872 50  0000 R CNN
+F 2 "" H 9650 5000 50  0001 C CNN
+F 3 "" H 9650 5000 50  0001 C CNN
+	1    9650 5000
 	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5EE3848A
+P 5550 1600
+F 0 "J?" H 5550 1700 50  0000 C CNN
+F 1 "shifter side" H 5400 1400 50  0000 C CNN
+F 2 "" H 5550 1600 50  0001 C CNN
+F 3 "~" H 5550 1600 50  0001 C CNN
+	1    5550 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5EE3CCBD
+P 5550 1000
+F 0 "J?" H 5550 1100 50  0000 C CNN
+F 1 "shifter side" H 5400 800 50  0000 C CNN
+F 2 "" H 5550 1000 50  0001 C CNN
+F 3 "~" H 5550 1000 50  0001 C CNN
+	1    5550 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5EE3EEA3
+P 9650 1000
+F 0 "J?" H 9650 1100 50  0000 C CNN
+F 1 "shifter side" H 9500 800 50  0000 C CNN
+F 2 "" H 9650 1000 50  0001 C CNN
+F 3 "~" H 9650 1000 50  0001 C CNN
+	1    9650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5EE3F8EA
+P 9650 1600
+F 0 "J?" H 9650 1700 50  0000 C CNN
+F 1 "shifter side" H 9500 1400 50  0000 C CNN
+F 2 "" H 9650 1600 50  0001 C CNN
+F 3 "~" H 9650 1600 50  0001 C CNN
+	1    9650 1600
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
