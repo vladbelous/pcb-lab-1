@@ -720,39 +720,17 @@ F 3 "" H 8200 4800 50  0001 C CNN
 	1    8200 4800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J10
-U 1 1 5ED9ADBA
-P 5350 1100
-F 0 "J10" H 5300 1200 50  0000 L CNN
-F 1 "IC-side" H 5150 1000 50  0000 L CNN
-F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 5350 1100 50  0001 C CNN
-F 3 "~" H 5350 1100 50  0001 C CNN
-	1    5350 1100
-	1    0    0    -1  
-$EndComp
-Text GLabel 5150 1100 0    50   Input ~ 0
+Text GLabel 5600 1100 2    50   Input ~ 0
 RX_2V5
-Text GLabel 5750 1000 2    50   Input ~ 0
+Text GLabel 5600 1000 2    50   Input ~ 0
 RX_2V5_A
-Text GLabel 5750 1100 2    50   Input ~ 0
+Text GLabel 5600 1200 2    50   Input ~ 0
 RX_2V5_B
-$Comp
-L Connector_Generic:Conn_01x01 J12
-U 1 1 5ED9CF8B
-P 5350 1700
-F 0 "J12" H 5300 1800 50  0000 L CNN
-F 1 "IC-side" H 5150 1600 50  0000 L CNN
-F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 5350 1700 50  0001 C CNN
-F 3 "~" H 5350 1700 50  0001 C CNN
-	1    5350 1700
-	1    0    0    -1  
-$EndComp
-Text GLabel 5150 1700 0    50   Input ~ 0
+Text GLabel 5600 1600 2    50   Input ~ 0
 TX_2V5
-Text GLabel 5750 1600 2    50   Input ~ 0
+Text GLabel 5600 1500 2    50   Input ~ 0
 TX_2V5_A
-Text GLabel 5750 1700 2    50   Input ~ 0
+Text GLabel 5600 1700 2    50   Input ~ 0
 TX_2V5_B
 Text GLabel 7250 1200 0    50   Input ~ 0
 RX_2V5_A
@@ -903,39 +881,17 @@ Text GLabel 7300 2300 0    50   Input ~ 0
 2V5
 Text GLabel 8100 3000 2    50   Input ~ 0
 5V
-$Comp
-L Connector_Generic:Conn_01x01 J15
-U 1 1 5EE00881
-P 9850 1100
-F 0 "J15" H 9800 1200 50  0000 L CNN
-F 1 "connector side" H 9350 1000 50  0000 L CNN
-F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 9850 1100 50  0001 C CNN
-F 3 "~" H 9850 1100 50  0001 C CNN
-	1    9850 1100
-	-1   0    0    -1  
-$EndComp
-Text GLabel 10050 1100 2    50   Input ~ 0
+Text GLabel 9400 1100 0    50   Input ~ 0
 RX
-Text GLabel 9450 1000 0    50   Input ~ 0
+Text GLabel 9400 1000 0    50   Input ~ 0
 RX_A
-Text GLabel 9450 1100 0    50   Input ~ 0
+Text GLabel 9400 1200 0    50   Input ~ 0
 RX_B
-$Comp
-L Connector_Generic:Conn_01x01 J17
-U 1 1 5EE00899
-P 9850 1700
-F 0 "J17" H 9800 1800 50  0000 L CNN
-F 1 "connector side" H 9350 1600 50  0000 L CNN
-F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 9850 1700 50  0001 C CNN
-F 3 "~" H 9850 1700 50  0001 C CNN
-	1    9850 1700
-	-1   0    0    -1  
-$EndComp
-Text GLabel 10050 1700 2    50   Input ~ 0
+Text GLabel 9400 1600 0    50   Input ~ 0
 TX
-Text GLabel 9450 1600 0    50   Input ~ 0
+Text GLabel 9400 1500 0    50   Input ~ 0
 TX_A
-Text GLabel 9450 1700 0    50   Input ~ 0
+Text GLabel 9400 1700 0    50   Input ~ 0
 TX_B
 Text GLabel 9700 2550 0    50   Input ~ 0
 5V
@@ -1118,50 +1074,6 @@ F 2 "" H 9650 5000 50  0001 C CNN
 F 3 "" H 9650 5000 50  0001 C CNN
 	1    9650 5000
 	0    1    -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J13
-U 1 1 5EE3848A
-P 5550 1600
-F 0 "J13" H 5550 1700 50  0000 C CNN
-F 1 "shifter side" H 5400 1400 50  0000 C CNN
-F 2 "local_footprints:Pin_Header_Straight_1x02_Pitch2.54mm" H 5550 1600 50  0001 C CNN
-F 3 "~" H 5550 1600 50  0001 C CNN
-	1    5550 1600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J11
-U 1 1 5EE3CCBD
-P 5550 1000
-F 0 "J11" H 5550 1100 50  0000 C CNN
-F 1 "shifter side" H 5400 800 50  0000 C CNN
-F 2 "local_footprints:Pin_Header_Straight_1x02_Pitch2.54mm" H 5550 1000 50  0001 C CNN
-F 3 "~" H 5550 1000 50  0001 C CNN
-	1    5550 1000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J14
-U 1 1 5EE3EEA3
-P 9650 1000
-F 0 "J14" H 9650 1100 50  0000 C CNN
-F 1 "shifter side" H 9500 800 50  0000 C CNN
-F 2 "local_footprints:Pin_Header_Straight_1x02_Pitch2.54mm" H 9650 1000 50  0001 C CNN
-F 3 "~" H 9650 1000 50  0001 C CNN
-	1    9650 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J16
-U 1 1 5EE3F8EA
-P 9650 1600
-F 0 "J16" H 9650 1700 50  0000 C CNN
-F 1 "shifter side" H 9500 1400 50  0000 C CNN
-F 2 "local_footprints:Pin_Header_Straight_1x02_Pitch2.54mm" H 9650 1600 50  0001 C CNN
-F 3 "~" H 9650 1600 50  0001 C CNN
-	1    9650 1600
-	1    0    0    -1  
 $EndComp
 $Comp
 L local_symbols:AP2280 U5
@@ -1591,4 +1503,48 @@ $EndComp
 NoConn ~ 8150 1400
 NoConn ~ 7250 1400
 NoConn ~ 8100 2300
+$Comp
+L Connector_Generic:Conn_01x03 J10
+U 1 1 5EF88700
+P 5400 1100
+F 0 "J10" H 5550 1150 50  0000 C CNN
+F 1 "JP_RX" H 5600 1050 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 5400 1100 50  0001 C CNN
+F 3 "~" H 5400 1100 50  0001 C CNN
+	1    5400 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J11
+U 1 1 5EF89402
+P 5400 1600
+F 0 "J11" H 5550 1650 50  0000 C CNN
+F 1 "JP_TX" H 5600 1550 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 5400 1600 50  0001 C CNN
+F 3 "~" H 5400 1600 50  0001 C CNN
+	1    5400 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J14
+U 1 1 5EF8A8DA
+P 9600 1100
+F 0 "J14" H 9680 1142 50  0000 L CNN
+F 1 "JP_RX" H 9680 1051 50  0000 L CNN
+F 2 "local_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 9600 1100 50  0001 C CNN
+F 3 "~" H 9600 1100 50  0001 C CNN
+	1    9600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J15
+U 1 1 5EF8A8E4
+P 9600 1600
+F 0 "J15" H 9680 1642 50  0000 L CNN
+F 1 "JP_TX" H 9680 1551 50  0000 L CNN
+F 2 "local_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 9600 1600 50  0001 C CNN
+F 3 "~" H 9600 1600 50  0001 C CNN
+	1    9600 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
