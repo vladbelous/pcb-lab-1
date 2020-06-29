@@ -5,4 +5,5 @@ solutions, as well as battery voltage measurement and reporting in a multi-volta
 
 TODO: add more description
 
-TODO: add schematic picture
+## Schematic:
+![schematic](img/schematic.png)
